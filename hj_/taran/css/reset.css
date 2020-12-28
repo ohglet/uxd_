@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+/* CSS Reset */
+/*
+font-family: 'Hind Vadodara', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: "Microsoft Tai Le"
+font-family: 'Montserrat', sans-serif;
+*/
+*{ margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none}
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block}
+body{font-family: 'Montserrat', sans-serif; font-size: 16px;
+  color: #333}
+ol, ul{list-style: none}
+table{border-collapse: collapse; border-spacing: 0}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img, video {border:0; vertical-align:top; }
+a{color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px;overflow: hidden; color: #fff}
+#skipNav{position:relative; z-index: 10; width:100%;overflow:hidden;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px; overflow:hidden; text-align:center; font-size:10px;}
+#skipNav a:hover,#skip#gnb a:focus,#skip#gnb a:active{height:auto; padding:10px 0; background:#f2f2f2;}
+html{scroll-behavior: smooth;}
+
+/*헤더공통*/	
+#wrap{width: 100%; overflow: hidden; position: relative; padding: 60px 0 0 60px; box-sizing: border-box; background: url(../images/home_1/back.svg)no-repeat center center;}
+
+.left_box{float: left;width: 60%;overflow: hidden;}
+#headerArea{overflow: hidden}
+#headerArea h1{float: left;position: relative; width: 100px; height: 45px;margin-left: 55px;top: ;}
+#headerArea h1 a{display: block;text-indent: -9999%; background: url(../images/home_1/logo.png);position: absolute;width: 100px; height: 45px;}
+#headerArea .menu{display: block; text-indent:-9999%; background: url(../images/home_1/icon-menu.png)no-repeat; width: 52px; height: 52px;float: left;}
+
+/*menu*/
+.box{width: 100%; height: 100%; background: #000;opacity: .6;position: absolute;left: 0; top: 0;z-index: 10;display: none}
+#gnb{clear: both; width:50%;position:absolute; top: 0; left: -100%;opacity: 0; z-index: 20; background: #fff;padding: 60px; box-sizing: border-box;}
+.mclose{display: block; background: url(../images/home_1/close.png) no-repeat; width: 52px; height: 52px;text-indent: -9999%;}
+#gnb .main_menu{font-size: 3.75rem; font-weight: bold; line-height: 80px;margin: 150px 0 50px 100px;}
+#gnb ul:nth-of-type(2){font-family: 'Noto Sans KR', sans-serif;font-weight: bold; font-size: 1.25rem;margin-left: 100px; line-height: 100px; columns: #444;}
+
+/*푸터공통*/
+#footerArea{clear: both; overflow:hidden; margin-left: 100px; margin-bottom: 60px;}
+#footerArea p{font-size: 1.563em;color: #B6B6B6;}
+
+
+/* 테블릿 */
+@media screen and (max-width:1366px) {
+  #wrap{background: none;}
+  .left_box{float: none; width: auto;} 
+  #footerArea{margin-left:60px}
+  #footerArea p{font-size: .875rem}
+}
+
+/* 모바일 */
+@media screen and (max-width:760px) {
+  #wrap{padding: 30px 0 0 12px;}
+  #headerArea h1{margin-left: 12px;}
+  #gnb{width: 100%;padding: 28px 0 0 12px;}
+  #gnb .main_menu{font-size: 2rem; line-height: 43px;margin-bottom: 30px;margin-left: 60px;}
+  #gnb ul:nth-of-type(2){margin-left: 60px;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:360px) {
+  #wrap { min-width:280px}
+}
+
+
+
+
+
+
+
+
+
+
+
