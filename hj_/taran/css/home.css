@@ -12,23 +12,30 @@
 #content1 ul dl dt span{display: block;font-size: .938rem;line;height: 20px;color: #b6b6b6;margin-top: 10px;}
 #content1 ul dl dd{font-size: 7.5rem;color: rgba(0, 0,0,.16);font-weight: lighter;font-weight: bold;line-height: 146px;float: right;position: absolute;right: 0;top: -25px;}
 
-/*work*/
+/*about*/
 #content2{width: 100%; clear: both; margin: 0 100px}
-#content2>h3{font-size: 3.75rem;font-weight: 800;line-height: 72px;margin: 140px 0 80px 0;}
-#content2>div{display: flex;flex-wrap: wrap;align-content: stretch;}
-#content2>div figure{margin-right: 80px;margin-bottom: 160px;overflow: hidden;width: 340px;}
-#content2>div figure img{width: 100%;}
-#content2>div figcaption h4{font-family: 'Noto Sans KR', sans-serif;font-size: 1.25rem; line-height: 29px;margin-top: 20px;}
-#content2 section{margin-bottom: 120px;}
-#content2 section h3{font-size: 3.75rem;line-height: 96px;font-weight: 800; margin-bottom: 80px;}
-#content2 section div{overflow: hidden}
-#content2 section div>ul{float: left;}
-#content2 section div>ul:nth-of-type(1){margin-right: 120px;padding-top: 20px;}
-#content2 section div>ul:nth-of-type(1) li{margin-bottom: 32px;}
-#content2 section div>ul:nth-of-type(1) li h4 a{color: #ccc; font-size: 1.5rem;}
-#content2 section div>ul:nth-of-type(1) li h4 a.on{font-size: 2.5rem; color: #333;}
-#content2 section div>ul:nth-of-type(2) li{font-family: 'Noto Sans KR', sans-serif;font-size: 2rem;font-weight: bold;margin-bottom: 60px;}
-#content2 section div>ul:nth-of-type(2) ul{margin-bottom: 200px;}
+#content2 h3{overflow: hidden;width: 698px; height: 402px; text-indent: -9999%; background: url(../images/about/taran.png) no-repeat;position: relative;left: 50%; margin-left: -349px;}
+#content2 p:nth-of-type(2){color: #01b455;}
+#content2 ul:nth-of-type(2) span{display: block; color: #01b455;}
+#content2 section img{width: auto; position: relative; left: 0px;bottom:0;}
+
+/*work*/
+#content3{width: 100%; clear: both; margin: 0 100px}
+#content3>h3{font-size: 3.75rem;font-weight: 800;line-height: 72px;margin: 140px 0 80px 0;}
+#content3>div{display: flex;flex-wrap: wrap;align-content: stretch;}
+#content3>div figure{margin-right: 80px;margin-bottom: 160px;overflow: hidden;width: 340px;}
+#content3>div figure img{width: 100%;}
+#content3>div figcaption h4{font-family: 'Noto Sans KR', sans-serif;font-size: 1.25rem; line-height: 29px;margin-top: 20px;}
+#content3 section{margin-bottom: 120px;}
+#content3 section h3{font-size: 3.75rem;line-height: 96px;font-weight: 800; margin-bottom: 80px;}
+#content3 section div{overflow: hidden}
+#content3 section div>ul{float: left;}
+#content3 section div>ul:nth-of-type(1){margin-right: 120px;padding-top: 20px;}
+#content3 section div>ul:nth-of-type(1) li{margin-bottom: 32px;}
+#content3 section div>ul:nth-of-type(1) li h4 a{color: #ccc; font-size: 1.5rem;}
+#content3 section div>ul:nth-of-type(1) li h4 a.on{font-size: 2.5rem; color: #333;}
+#content3 section div>ul:nth-of-type(2) li{font-family: 'Noto Sans KR', sans-serif;font-size: 2rem;font-weight: bold;margin-bottom: 60px;}
+#content3 section div>ul:nth-of-type(2) ul{margin-bottom: 200px;}
 
 /* 테블릿 */
 @media screen and (max-width:1366px) {
@@ -39,11 +46,11 @@
   #content1 ul dl dt{font-size: 2.5rem; line-height: 52px;}
   #content1 ul dl dt span{font-size: .938rem;line-height: 20px;}
   #content1 ul dl dd{top: -18px;}
-  #content2>h3{font-size: 2.5rem; line-height: 49px;}
-  #content2>div figure{width: 276px;margin-right: 65px;}
-  #content2 section h3{font-size: 2.5rem; line-height: 96px;margin-bottom: 65px;}
-  #content2 section div>ul:nth-of-type(2) li{font-size: 1.75rem;}
-  #content2 section div>ul:nth-of-type(2) ul{margin-bottom: 120px;}
+  #content3>h3{font-size: 2.5rem; line-height: 49px;}
+  #content3>div figure{width: 276px;margin-right: 65px;}
+  #content3 section h3{font-size: 2.5rem; line-height: 96px;margin-bottom: 65px;}
+  #content3 section div>ul:nth-of-type(2) li{font-size: 1.75rem;}
+  #content3 section div>ul:nth-of-type(2) ul{margin-bottom: 120px;}
 }
 
 /* 모바일 */
@@ -52,16 +59,16 @@
   #content1 h3{font-size: .688rem;margin-bottom: 20px;}
   #content1 ul dl dt{font-size: 1.25rem; line-height: 27px;}
   #content1 ul dl dd{font-size: 3.75rem; line-height: 90px;margin-right: 0;top: -12px;}
-  #content2{margin: 0 60px}
-  #content2>h3{font-size: 1.5rem;line-height: 32px}
-  #content2>div figure{width: 300px;margin-bottom: 60px;}
-  #content2>div figcaption h4{font-size: 1rem;}
-  #content2 section h3{font-size: 1rem; margin-bottom: 50px; line-height: 32px;}
-  #content2 section div>ul{float: none;width: auto;}
-  #content2 section div>ul:first-of-type{display: flex;margin-bottom: 35px;}
-  #content2 section div>ul:first-of-type li{margin-right: 30px;}
-  #content2 section div>ul:nth-of-type(2) li{font-size: 1.125rem;margin-bottom: 30px;}
-  #content2 section div>ul:nth-of-type(2) ul{margin-bottom: 100px;}
+  #content3{margin: 0 60px}
+  #content3>h3{font-size: 1.5rem;line-height: 32px}
+  #content3>div figure{width: 300px;margin-bottom: 60px;}
+  #content3>div figcaption h4{font-size: 1rem;}
+  #content3 section h3{font-size: 1rem; margin-bottom: 50px; line-height: 32px;}
+  #content3 section div>ul{float: none;width: auto;}
+  #content3 section div>ul:first-of-type{display: flex;margin-bottom: 35px;}
+  #content3 section div>ul:first-of-type li{margin-right: 30px;}
+  #content3 section div>ul:nth-of-type(2) li{font-size: 1.125rem;margin-bottom: 30px;}
+  #content3 section div>ul:nth-of-type(2) ul{margin-bottom: 100px;}
 }
 
 /* 최소 사이즈 처리 */
